@@ -1,0 +1,162 @@
+body 
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}   
+
+:root{
+    --main-color:  #1e202b;
+}
+
+nav
+{
+    background-color: #1e202b;
+}
+.navbar-brand i 
+{
+    font-size: 60px;
+    color: #15bddf;
+}
+
+h1
+{
+    font-size: 20px;
+    padding: 20 0 0 10;
+    color: white;
+}
+
+li
+{
+    padding: 15px;
+}
+
+ul .nav-link
+{
+    color: white !important;
+    font-size: 15px !important;
+    transition: all 0.3s ;
+    padding: 5px 20px !important;
+    border: solid 1px transparent;
+    border-radius: 15px ;
+}
+ul .nav-link:hover
+{
+    border: solid 1px #15bddf;
+    color: #15bddf !important;
+    color: rgba(white, green, blue, alpha);
+}
+
+
+
+#weather
+{
+    background-image: url(../Images/city.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#search
+{
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 17px 50px 17px 20px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+#submit
+{
+    border: none;
+    background: #009ad8;
+    padding: 12px 35px;
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translatey(-50%) ;
+}
+
+
+.today , .after-tomorrow
+{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 0 7px black;
+}
+.today-title  , .nextday-title
+{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 7px;
+    text-align: center;
+}
+.tomorrow
+{
+    background-color: #2d3041;
+    border-radius: 10px;
+    box-shadow: 0 0 7px black;
+    padding-bottom: 20px;
+}
+.after-tomorrow
+{
+    padding-bottom: 20px;
+
+}
+footer
+{
+    background-color: var(--main-color);
+}
+
+#email
+{
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 17px 50px 17px 20px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+#subscribe
+{
+    border: none;
+    background: #009ad8;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translatey(-50%) ;   
+}
+
+.footer-icons i
+{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.footer-icons i:hover
+{
+    background-color: #009ad8;
+    color: black;
+}
+
+.navbar-toggler
+{
+    border: none !important;
+}
+.navbar-toggler-icon
+{
+    background-image: url(../Images/108564673-hamburger-menu-web-icon-white-icon-with-shadow-on-transparent-background.webp) !important;
+}
+
+
+

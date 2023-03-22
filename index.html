@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="webfonts/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="Images/252035.png">
+
+<title>Weather Api</title>
+
+<meta charset="UTF-8" />
+<meta name="author" content="Amr Ali" />
+<meta name="description" content="Weather Api" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="html,css,js,bootstrap,jquery" />
+
+
+
+</head>
+
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="w-75 m-auto d-flex">
+        <a class="navbar-brand d-flex" href="#"> 
+          <i class="bi bi-clouds  "></i>
+          <div> <h1>Weather</h1> </div>
+        </a>
+      <button class="navbar-toggler  ms-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-5  mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+      
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <!------------------ Nav bar ----------------->
+  <header id="weather" class="pt-5 text-white">
+    <div class="container w-75 pt-5">
+
+     <div class="search ">
+      <input type="text" placeholder=" Find your location...." id="search">
+     </div>
+  <!---------------- search bar ----------------->
+
+      <div class="row mt-5">
+        <div class="col-md-4 ">
+          <div class="today ">
+
+            <div class="today-title d-flex justify-content-between">
+           <span id="today-day"> </span>
+           <span id="today-number"> </span>
+            </div>
+  <!------------------ today's title ----------------->
+
+            <div class="today-body ps-4">
+              <h4 class="py-3" id="location"></h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h2 class="d-inline" id="today-degree"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                </div>            
+                 <img id="today-icon" width="80px"   >
+              </div>
+              <p class="py-2" id="today-desc"></p>
+            </div>
+  <!------------------ today's body ----------------->
+
+            <div class="details ps-3 pb-2 ">
+              <i class="fas fa-umbrella  "></i>
+              <span id="humidty"></span> <span class="pe-2">%</span>
+
+              <i class="fas fa-wind  px-2 "></i>
+              <span id="wind"></span> <span class="pe-2">km/h</span>
+
+              <i class="far fa-compass  px-2 "></i>
+              <span class="pe-2" id="compass"></span>
+            </div>
+          </div>
+        <!----------- Today's card  ----------->
+        </div>
+
+        <div class="col-md-4">
+          <div class="tomorrow ">
+
+            <div class="nextday-title ">
+              <span class="next-day" ></span>
+            </div>
+        <!------------------ Next day title ----------------->
+
+            <div class="nextday-body text-center ">
+              <div>
+                <img class="nextday-icon w-25">
+              </div>
+              <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+              <br>              
+              <p class="min-degree fs-0 " ></p>
+              <p  class="nextDay-description"></p>
+            </div>
+        <!------------------ Next day body ----------------->
+
+          </div>
+        <!------------------ Next day card ----------------->
+
+        </div>
+        <div class="col-md-4">
+          <div class="after-tomorrow ">
+
+            <div class="nextday-title ">
+              <span class="next-day" ></span>
+            </div>
+        <!------------------ Next day title ----------------->
+
+            <div class="nextday-body text-center ">
+              <div>
+                <img class="nextday-icon w-25">
+              </div>
+              <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+              <br>              
+              <p class="min-degree fs-0 " ></p>
+              <p  class="nextDay-description"></p>
+            </div>
+        <!------------------ Next day body ----------------->
+          </div>
+        <!------------------ Next day card ----------------->
+          
+        </div>
+
+      </div>
+    </div>
+  </header>
+  
+  <footer id="footer" >
+    <div class="container">
+      <div class="row  py-5">
+        <div class="col-md-8">
+          <div class="footer-email position-relative ">
+            <input type="email" placeholder=" Enter your email to subscribe...." id="email">
+            <input type="submit" value="Subscribe" id="subscribe">
+          </div>
+        </div>
+        <div class="col-md-3 offset-1">
+          <div class="footer-icons  ">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+      
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+
+</body>
+
+</html>
